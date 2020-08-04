@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  padding-top: 60px;
+  font-family: 'Libre Franklin', sans-serif;
+}
+.illustration img {
+  width: 100%;
+}
+.launch {
+  margin-top: 30px;
+  font-size: 35px;
+  color: hsl(0, 0%, 59%);
+  margin-bottom: 10px;
+}
+span {
+  font-weight: 700;
+  color: hsl(209, 33%, 12%);
+}
+.subscribe {
+  color: hsl(209, 33%, 12%);
+  font-weight:600;
+  margin-bottom: 30px;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+.warning {
+  display: none;
+  color: hsl(354, 100%, 66%);
+  margin-left: -30px;
+  font-style: italic;
+}
+.show .warning{
+  display: block;
+}
+.show input {
+  border: 1px solid hsl(354, 100%, 66%);
+}
+input[type=email]{
+  height: 40px;
+  width: 340px;
+  margin-right: 10px;
+  border-radius: 20px;
+  border: none;
+  border: 1px solid hsl(223, 100%, 88%);
+  font-family: 'Libre Franklin', sans-serif;
+  padding-left: 20px
+}
+.show input {
+  border: 1px solid hsl(354, 100%, 66%);
+}
+
+button {
+  height: 40px;
+  width: 160px;
+  border-radius: 20px;
+  border: none;
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 5px 5px rgba(79, 125, 243, 0.3);
+  cursor: pointer;
+}
+button:hover {
+  background-color: hsl(223, 89%, 71%);
+}
+input::placeholder {
+  color: hsl(223, 100%, 88%);
+  padding-left: 20px;
+}
+.illustration {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.icons {
+  width: 160px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.fab {
+  font-size: 20px;
+  color: hsl(223, 47%, 42%);
+  border: 1px solid hsl(0, 0%, 59%);
+  padding: 10px;
+  border-radius: 50%;
+}
+.fab:hover {
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+}
+.fa-facebook-f {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+.fa-instagram {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.copy {
+  color: hsl(0, 0%, 59%);
+  margin-bottom: 10px;
+}
+footer {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+  .form {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  .illustration {
+    width: 85%;
+  }
+  input[type=email]{
+    width: 75%;
+  }
+  button {
+    width: 75%;
+    margin-top: 10px;
+  }
+  .text-field {
+    width: 100%;
+  }
+  .warning {
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  .fab {
+    font-size: 15px;
+  }
+  .fa-facebook-f {
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+  .fa-instagram {
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+}
